@@ -1,0 +1,32 @@
+
+<h4>Best-Seller Products From Fake API</h4>
+
+<head>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.2/js/bootstrap.min.js"></script>
+    <style>
+        .card {
+            height: 100%;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container mt-5">
+        <div class="row">
+            <div class="col-sm-4 mb-5" *ngFor="let product of ProductList">
+                <div class="card">
+                    <div class="card-body">
+                        <img class="card-img" [src]="product.image_link" alt="Card image cap">
+                        <h5>{{product.name}}</h5>
+                        <p class="card-text">{{product.category}} {{product.brand}}</p>
+                        <p class="card-text" style="color: rgb(134, 52, 11); font-weight: bold;">price:
+                            {{product.price}}$</p>
+                        <button class="btn btn-primary">Add to Cart</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>

@@ -1,0 +1,124 @@
+* {
+    font-family: system-ui;
+}
+
+h2,
+h4 {
+    text-align: center;
+    color: rgb(43, 45, 45);
+    margin: 20px 0;
+}
+
+.card {
+    display: inline-block;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+    height: 100%;
+    text-align: center;
+    margin: 10px;
+    padding: 20px;
+    background-color: #fff;
+}
+
+button {
+    border: none;
+    margin: 5px;
+    padding: 10px;
+    color: white;
+    background-color: #151414d0;
+    text-align: center;
+    width: 120px;
+    font-size: 15px;
+    cursor: pointer;
+}
+
+form button {
+    border: none;
+    margin: 10px;
+    padding: 10px;
+    color: white;
+    background-color: #151414d0;
+    text-align: center;
+    width: 60px;
+    font-size: 15px;
+    cursor: pointer;
+}
+
+
+.price {
+    color: rgb(43, 120, 96);
+    font-size: 20px;
+}
+
+img {
+    width: 80%;
+    margin: 20px;
+}
+
+.redMes {
+    color: rgb(166, 34, 34);
+}
+
+.noMes {
+    display: none;
+}
+
+button:hover {
+    opacity: 0.8;
+}
+
+
+form {
+    text-align: center;
+}
+
+.logform {
+    display: inline-block;
+    width: 60%;
+    height: 60%;
+    margin-top: 60px;
+    text-align: center;
+    font-weight: bold;
+
+}
+
+.search {
+    border: 1px solid transparent;
+    background-color: transparent;
+    border: 1px solid #ccccccad;
+    background: transparent;
+    font-size: 15px;
+    height: 40px;
+    width: 500px;
+}
+
+.icon {
+    width: 40px;
+    cursor: pointer;
+    outline: none;
+}
+.search:focus {
+    outline: none;
+    border-color: #646464d6;
+
+}
+button:hover {
+    outline: none;
+    border: none;
+    opacity: 0.8;
+}
+
+#form{
+    text-align: center;
+ }
+ input[type="text"] , input[type="url"] {
+     background-color: transparent;
+     outline: none;
+     border: 0.5px solid #ccccccec;
+     width: 600px;
+     height: 40px;
+ }
+ input[type]:focus{
+     outline: none;
+     box-shadow: none;
+     background-color: #ffffff;
+}

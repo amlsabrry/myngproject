@@ -1,0 +1,42 @@
+h4{
+    text-align: center;
+    color: rgba(48, 54, 50, 0.747);
+    margin: 20px 0;
+}
+
+.card {
+    display: inline-block;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+    height: 100%;
+    text-align: center;
+    margin: 10px;
+    background-color: #fff;
+}
+
+button {
+    border: none;
+    margin: 5px;
+    padding: 10px;
+    color: white;
+    background-color: #780202d0;
+    text-align: center;
+    width: 120px;
+    font-size: 15px;
+    cursor: pointer;
+}
+
+.price {
+    color: rgb(43, 120, 96);
+    font-size: 20px;
+}
+
+img {
+    width: 70%;
+    margin: 20px;
+}
+.redMes {
+    color: rgb(166, 34, 34);
+}
+.noMes {
+    display: none;
+}

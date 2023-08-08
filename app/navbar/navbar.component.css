@@ -1,0 +1,31 @@
+.mynav {
+
+    background-color: #ffffff;
+    border-bottom: 1px solid #e9e5e5cb;
+    margin-bottom: 20px;
+}
+
+h5 {
+    color: rgb(28, 113, 33);
+}
+
+a {
+    color: rgb(28, 27, 27);
+    font-size: 18px;
+
+}
+
+a:hover {
+    text-decoration: none;
+    opacity: 0.8;
+    color: rgb(52, 52, 52);
+}
+
+nav ul li {
+    margin-top: 0;
+    padding-left: 60px;
+}
+
+.logo {
+    width: 120px;
+}

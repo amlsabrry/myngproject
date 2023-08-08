@@ -1,0 +1,28 @@
+<head>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+
+<body>
+    <h4>Your Shopping Cart</h4>
+    <div class="container mt-5">
+        <div class="row">
+            <div class="col-sm-4 " *ngFor="let product of itemcart">
+                <div class="card">
+                    <div class="card-body">
+                        <img [src]="product.imgSrc">
+                        <h5 class="name">{{product.name}}</h5>
+                        <p>{{product.description}}</p>
+                        <h3 class="price">price : {{product.price}}</h3>
+                        <h6 [ngClass]="product.quantity<=5 && product.quantity>0 ?'redMes' : 'noMes' ">Only
+                            {{product.quantity}}
+                            Left in
+                            Stock !</h6>
+                        <h6 [ngClass]="product.quantity==0 ?'redMes' : 'noMes' ">Out Of Stock </h6>
+                        <button (click)="DeleteProduct(product)" class="delete"
+                            style="width: 140px; background-color: rgb(165, 48, 48);"> Delete Product</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
